@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "fractal:build": "fractal build",
+    "fractal:watch": "fractal start --sync"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.5.15"
+  },
+  "devDependencies": {
+    "@frctl/twig": "^1.2.13"
   }
 }
