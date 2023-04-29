@@ -1,12 +1,47 @@
 {
   "scripts": {
+    "dev": "cross-env NODE_ENV=dev && vite",
+    "build": "cross-env NODE_ENV=production && tsc && vite build",
+    "preview": "vite preview",
     "fractal:build": "fractal build",
-    "fractal:watch": "fractal start --sync"
+    "fractal:watch": "fractal start --sync",
+    "mix:dev": "mix",
+    "mix:watch": "mix watch"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.5.15"
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.23",
+    "postcss-comment": "^2.0.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-pxtorem": "^6.0.0",
+    "stylelint": "^15.6.0",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-config-standard": "^33.0.0",
+    "swiper": "^9.2.4"
   },
   "devDependencies": {
-    "@frctl/twig": "^1.2.13"
+    "@frctl/fractal": "^1.5.15",
+    "@frctl/twig": "^1.2.13",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/lodash": "^4.14.194",
+    "@vitejs/plugin-legacy": "^4.0.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "tailwindcss": "^3.3.1",
+    "tailwindcss-debug-screens": "^2.2.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0"
   }
 }
